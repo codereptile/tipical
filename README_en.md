@@ -1,24 +1,24 @@
 # tipical
 A summary of most typical mistakes in C++ and programming languages in general
 
-Под TL ещё берётся OL
+Under TL , OL is also taken
 
 WA/RE/TL/ML:
-* переполнение (типы данных)
-* инциализация (заполнить нулями / default значениями)
-* выйти за границы массива
-* неправильная формулка (неправильный код)
+* overflow (data types)
+* initialization (fill with zeros /default values)
+* go beyond the boundaries of the array
+* wrong formula (wrong code)
 
 WA/RE:
-* отсуствие возврата из функции (функция должна была что-то вернуть, но ничего не вернула (то есть вернула мусор))
-* обратится к неправильному указателю
-* перепутали порядок обхода многомерного массива
+* there is no return from the function (the function should have returned something, but did not return anything (that is, returned garbage))
+* access the wrong pointer
+* mixed up the order of traversing a multidimensional array
 
 RE/TL/ML:
-* бесконечная рекурсия
+* infinite recursion
 
 WA:
-* неправильно работаете с float/double (неправильно их сравниваете)
+* working with float/double incorrectly (comparing them incorrectly)
 ```cpp
 #include <iostream>
 #include <cmath>
@@ -27,28 +27,28 @@ WA:
 #define double_cmp(a, b) std::fabs(a - b) < EPS
 
 int main() {
-    double a = 1.0/3;
-    double b = 1.0/33;
-    if (double_cmp(a, b * 11)) {
-        std::cout << "OK\n";
-    } else {
-        std::cout << "not OK\n";
-    }
+double a = 1.0/3;
+double b = 1.0/33;
+if (double_cmp(a, b * 11)) {
+std::cout << "OK\n";
+} else {
+std::cout << "not OK\n";
+}
 }
 ```
 
 RE:
-* обратится к `nullptr`
+* will refer to `nullptr`
 
 TL:
-* бесконечный цикл
-* отсутствие оптимизации ввода-вывода
+* infinite loop
+* lack of I/O optimization
 
 TL/ML:
-* Делаете `push_back` без `reserve`
+* Do 'push_back' without 'reserve`
 
-Упоротые ошибки:
+Stubborn mistakes:
 * `;`
-* конфликт имён
+* name conflict
 * `if (a = 0) ...`
 * `double x = 1/3;`
