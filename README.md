@@ -1,5 +1,5 @@
 # tipical
-A summary of most typical mistakes in C++ and programming languages in general
+Сборник типичных ошибок для С++ и программирования в целом
 
 Под TL ещё берётся OL
 
